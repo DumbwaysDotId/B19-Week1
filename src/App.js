@@ -4,6 +4,7 @@ import './App.css';
 //Component Import
 import Header from './Components/Header';
 import Content from './Components/Content';
+import ListData from './Components/ListData';
 
 // class App extends Component{
 //   render(){
@@ -20,8 +21,9 @@ import Content from './Components/Content';
 function App(){
   return(
     <div className="App">
-      <Header />
+      <Header judul="Header With Props"/>
       <Content />
+      <ListData />
     </div>
   )
 }

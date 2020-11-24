@@ -4,16 +4,16 @@ import React, {Component} from 'react';
 //     render(){
 //         return(
 //             <div>
-//                 <h1>This Is Header Now</h1>
+//                 <h1>{this.props.judul}</h1>
 //             </div>
 //         )
 //     }
 // }
 
-function Header(){
+function Header(props){
     return(
         <div>
-            <h1>This Is Header Now</h1>
+            <h1>{props.judul}</h1>
         </div>
     )
 }
