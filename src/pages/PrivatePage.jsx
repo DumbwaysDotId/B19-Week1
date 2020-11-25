@@ -10,6 +10,7 @@ import Todo from './Todo';
 import Css from './Css';
 import ArrayData from './arrayData';
 import ObjectData from './objectData';
+import FrameworkCSS from './frameworkCss';
 
 // class App extends Component{
 //   render(){
@@ -34,6 +35,7 @@ function PrivatePage(){
       <Css />
       <ArrayData />
       <ObjectData />
+      <FrameworkCSS />
     </div>
   )
 }
