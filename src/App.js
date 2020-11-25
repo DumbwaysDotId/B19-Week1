@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Content from './Components/Content';
 import ListData from './Components/ListData';
 import Inc from './Components/Inc';
+import Todo from './pages/Todo';
 
 // class App extends Component{
 //   render(){
@@ -26,6 +27,7 @@ function App(){
       <Content />
       <ListData />
       <Inc />
+      <Todo />
     </div>
   )
 }
