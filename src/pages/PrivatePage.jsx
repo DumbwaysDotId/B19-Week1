@@ -8,6 +8,8 @@ import ListData from '../Components/ListData';
 import Inc from '../Components/Inc';
 import Todo from './Todo';
 import Css from './Css';
+import ArrayData from './arrayData';
+import ObjectData from './objectData';
 
 // class App extends Component{
 //   render(){
@@ -30,6 +32,8 @@ function PrivatePage(){
       <Inc />
       <Todo />
       <Css />
+      <ArrayData />
+      <ObjectData />
     </div>
   )
 }
