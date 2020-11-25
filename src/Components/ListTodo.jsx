@@ -1,4 +1,5 @@
 import React, {} from 'react';
+import PropTypes from 'prop-types';
 
 function Todo({ todo, index, completeTodo, removeTodo }){
     return(
@@ -10,6 +11,12 @@ function Todo({ todo, index, completeTodo, removeTodo }){
             </div>
         </div>
     )
+}
+
+Todo.propTypes = {
+    todo: PropTypes.object,
+    completeTodo : PropTypes.func,
+    removeTodo : PropTypes.func
 }
 
 export default Todo

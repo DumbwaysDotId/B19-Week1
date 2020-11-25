@@ -1,35 +1,18 @@
-import React, {Component} from 'react';
-import './App.css';
+import {useState} from 'react';
 
-//Component Import
-import Header from './Components/Header';
-import Content from './Components/Content';
-import ListData from './Components/ListData';
-import Inc from './Components/Inc';
-import Todo from './pages/Todo';
-
-// class App extends Component{
-//   render(){
-//     return(
-//       <div className="App">
-//         <Header/>
-//         <Content/>
-//       </div>
-//     )
-//   }
-// }
-
+//Pages Import
+import GuestPage from './pages/GuestPage';
+import PrivatePage from './pages/PrivatePage';
 
 function App(){
+  const [isLoggedIn] = useState(true)
   return(
-    <div className="App">
-      <Header judul="Header With Props"/>
-      <Content />
-      <ListData />
-      <Inc />
-      <Todo />
+    <div>
+      {
+        isLoggedIn ? < PrivatePage/> : <GuestPage />
+      }
     </div>
   )
 }
 
-export default App;
+export default App
